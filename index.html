@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shoutcut icon" href="./images/fv,slick/fv.png">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+
+    <script src="./script/jquery-1.11.3.min.js"></script>
+    <script src="./script/jquery.innerfade.js"></script>
+    <script>
+        $(function () {
+
+            $('.slideList').innerfade({
+                animationtype: 'fade',
+                timeout: 2000
+            })
+        });
+    </script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="./images/main_header_logo_v2.png" alt="아리따움">
+        </div>
+        <div class="box1">
+            <ul>
+                <li><a href="#">베스트</a></li>
+                <li><a href="#">기획전</a></li>
+                <li><a href="#">이벤트</a></li>
+                <li><a href="#">이달의 신상</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="main">
+        <div class="slideList">
+            <div class="slideImg"><a href="#"><img src="./images/banner_1.jpg" alt="slide1"></a></div>
+            <div class="slideImg"><a href="#"><img src="./images/banner_2.jpg" alt="slide2"></a></div>
+            <div class="slideImg"><a href="#"><img src="./images/banner_3.jpg" alt="slide3"></a>
+            </div>
+        </div>
+    </div>
+    <div class="main2">
+        <ul>
+            <li>
+                <h1><a href="#">WEEKLY BEST</a></h1>
+            </li>
+            <li><a href="#">베스트 상품 전체보기 ></a></li>
+            <li><a href="#">NEW</a></li>
+            <li><a href="#">REVIEW</a></li>
+        </ul>
+        <div class="banner_slider">
+            <div class="items">
+                <p><a href="#">
+                        <img src="./images/banner__1.jpg" alt="제품1">
+
+
+                        <h4>아리따움</h4>
+                        <h5>미감수 브라이트 페이셜 클렌징폼</h5>
+                        <h3>9000원</h3>
+                    </a>
+                </p>
+            </div>
+            <div class="items">
+                <p><a href="#">
+                        <img src="./images/banner__2.gif" alt="제품2">
+
+
+                        <h4>아리따움</h4>
+                        <h5>파워 롱래스팅 선크림 50ml</h5>
+                        <h3>20,000원</h3>
+                    </a>
+                </p>
+            </div>
+            <div class="items">
+                <p><a href="#">
+                        <img src="./images/banner__3.jpg" alt="제품3">
+
+
+                        <h4>아리따움</h4>
+                        <h5>더 솔루션 더블업 마스크 시트</h5>
+                        <h3>2000원</h3>
+                    </a>
+                </p>
+            </div>
+            <div class="items">
+                <p><a href="#"><img src="./images/banner__4.png" alt="제품4">
+
+
+                        <h4>아리따움</h4>
+                        <h5>리치 V핸드&풋 토탈 트린트먼트</h5>
+                        <h3>8000원</h3>
+                    </a>
+                </p>
+            </div>
+            <div class="items">
+                <p><a href="#"><img src="./images/banner__5.jpg" alt="제품5">
+
+
+                        <h4>아리따움</h4>
+                        <h5>올클리어 미셀라 클렌징 워터 티슈 40매</h5>
+                        <h3>1,3000원</h3>
+                    </a>
+                </p>
+            </div>
+            <div class="items">
+                <p><a href="#"><img src="./images/banner__6.jpg" alt="제품6">
+                    
+
+                    <h4>아리따움</h4>
+                    <h5>올클리어 미셀라 클렌징 폼</h5>
+                    <h3>1,2000원</h3>
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="footer"></div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script>
+        
+        $(function () {
+            
+            $(".banner_slider").slick({
+                autoplay: true,  
+                autoplaySpeed: 1000,
+                infinite: true, 
+                slidesToShow: 4,  
+                dots: false,                
+                focusOnSelect: true, 
+                arrows: true, 
+                conterPadding: '300px',               
+                centerMode: true  
+
+            })
+        });
+    </script>
+</body>
+
+</html>
